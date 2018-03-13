@@ -9,16 +9,22 @@ still executes it anyways.
 
 int main(void)
 {
+
   int height = get_int("Height: ");
+
+//It is the || operator that messes with it
   if (height > 3 || height < 23)
   {
+    printf("worked\n");
+    /*
     for(int i; i != height; i++)
     {
       printf("#\n");
     }
+    */
   }
   else
   {
-    printf("fail");
+    printf("fail\n");
   }
 }
