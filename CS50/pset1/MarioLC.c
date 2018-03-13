@@ -3,10 +3,11 @@
 
 int main(void)
 {
-  int height = get_int("Height: \n");
+  int i;
+  int height = get_int("Height: ");
 
-  for(int i = 0; i == height; i++)
+  for(i; i != height; i++)
   {
-    printf("%i", i);
+    printf("1\n");
   }
 }
