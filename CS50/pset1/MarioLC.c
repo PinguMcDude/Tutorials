@@ -3,24 +3,29 @@
 
 /*
 I have to fix:
-- Even though I am asking the program to only execture the for loop when height is more than 3 and less than 23, it
-still executes it anyways.
+-
 */
 
 int main(void)
 {
-
-  int height = get_int("Height: ");
-
-  if (height > 3 && height < 23)
+  while (1)
   {
-    for(int i; i != height; i++)
+    int height = get_int("Height: ");
+
+    if (height > 3 && height < 23)
     {
-      printf("#\n");
+      for (int i = 0; i != height; i++)
+      {
+        for (int x = 0; x != i + 1; x++)
+        {
+          printf("#");
+        }
+        printf("\n");
+      }
     }
-  }
-  else
-  {
-    printf("fail\n");
+    else
+    {
+      printf("Invalid number, please try again\n");
+    }
   }
 }
